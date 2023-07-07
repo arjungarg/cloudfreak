@@ -25,6 +25,6 @@ class WelcomeController {
 
     @GetMapping("/")
     public String welcome() {
-        return "Jai Jai Shri Radhey";
+        return "Jai Jai Shri Radhey Welcome ji Vishai Tyagi and Sumit choudhary";
     }
 }
