@@ -20,7 +20,7 @@ pipeline {
         }
          
         stage('Build docker image') {
-            {
+            step {
                script {         
                  def customImage = docker.build('rajat6969/eycloud', "./docker")
                  docker.withRegistry('https://registry.hub.docker.com', 'dokcerhub') {
