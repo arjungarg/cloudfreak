@@ -23,7 +23,7 @@ pipeline {
             steps {
                script {         
                  def customImage = docker.build('rajat6969/eycloud', "./docker")
-                 docker.withRegistry('https://registry.hub.docker.com', 'dokcerhub') {
+                 docker.withRegistry('https://registry.hub.docker.com', '12345') {
                  customImage.push("${env.BUILD_NUMBER}")
                  }                     
            }
